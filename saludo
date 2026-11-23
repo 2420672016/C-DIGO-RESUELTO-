@@ -1,0 +1,17 @@
+Private Sub btnSaludar_Click(sender As Object, e As EventArgs) Handles btnSaludar.Click
+  Dim nombre As String = txtNombre.Tex.Trim()
+
+if nombre =""Then
+      MenssageBox.Show("Escribe tu nombre.")
+      txtNombre.Focus()
+      Exit Sub
+    End If 
+
+  IbResultado.Text = "¡ Hola,"& nombre & "!Bienvenido a Programación Visual."
+End Sub
+
+Private Sub btnLimpiar_Click(sender As EventArgs) Handles btnLimpiar.Click
+  txtNombre.Clear()
+  IbIResultado.Text =""
+  txtNombre.Focus()
+End Sub
